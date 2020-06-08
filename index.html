@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> <!--encoding -->
+    <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- Used to take control over the viewport -->
+    <!-- The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).-->
+    <!-- The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Used for compatibility with Internet Explorer -->
+    <title>The Punk Rock Gazeta</title> <!-- Title -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css"> <!-- For Google Fonts API -->
+    <link rel="stylesheet" type="text/css" href="main.css"> <!-- Link to css -->
+    <link rel="stylesheet" type="text/css" href="responsive.css"> <!-- Link to css -->
+  </head>
+  <body>
+
+    <header class="header"> <!-- Container with the header -->
+      <div class="header__inner">
+        <img class="header__logo" src="https://raw.githubusercontent.com/anferebu/FILES-USED-IN-PROJECTS/master/punk.png" alt="iconic view of a cityscape"> <!--Logo of the header-->
+        <h1 class="header__title"> <!--Title-->
+          THE PUNK ROCK GAZETA
+        </h1>
+        <img class="header__logo" src="https://raw.githubusercontent.com/anferebu/FILES-USED-IN-PROJECTS/master/punk.png" alt="iconic view of a cityscape">
+        <a id="menu" class="header__menu"> <!--This part implements the hamburguer menu-->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <!--svg is a container for svg graphics, the viewBox attribute makes the icon of the menu to fit a particular container and path means that the path will be scaled.-->
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav"> <!--Menu-->
+      <ul class="nav__list"> <!--Unordered list with the items of the Menu.-->
+        <li class="nav__item"><a href="#">News</a></li> <!--Each item of the menu is a clickable link.-->
+        <li class="nav__item"><a href="#">Concerts</a></li>
+        <li class="nav__item"><a href="#">Bands</a></li>
+        <li class="nav__item"><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+
+    <main> <!--Main section of the page divided in different sections.-->
+      <section class="content">
+        <section class="hero"> <!--Section hero.-->
+          <article class="description"> <!--Article.-->
+            <h2>Absolutely astonishing breaking news!</h2><!--Title of the article.-->
+            <p>It is unclear if Green Day will continue with the European leg of their tour, which would kick off in Moscow in May. It includes stops in Helsinki, Stockholm, Berlin and London before ending in Dublin in June.</p>
+          </article>
+        </section>
+
+        <section class="news top-news"> <!--Section top news.-->
+          <h2 class="news__title">Top news <a href="#" class="news__more">+ more</a></h2> <!-- Unordered list with the news.  Every title is linkable.-->
+          <ul>
+            <li class="top-news__item">
+              <a href="https://www.rollingstone.com/music/music-news/foo-fighters-dave-grohl-live-music-op-ed-997816/" target="_blank">Foo Fighters' Dave Grohl Envisions Return of Live Music in Op-Ed</a>
+            </li>
+            <li class="top-news__item">
+              <a href="https://www.rollingstone.com/music/music-country/caleb-caudle-covid-touring-997677/" target="_blank">Released in a Pandemic, Caleb Caudle's New Album Is His Best Selling Yet.</a>
+            </li>
+            <li class="top-news__item">
+              <a href="https://www.rollingstone.com/music/music-news/pink-floyd-david-gilmour-syd-barrett-solo-songs-997543/" target="_blank">Watch Pink Floyd's David Gilmour Sing Two Syd Barrett Solo Songs.</a>
+            </li>
+            <li class="top-news__item">
+              <a href="https://www.rollingstone.com/music/music-news/squirrel-flower-in-my-room-video-997376/" target="_blank">'In My Room' With Squirrell Flower</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="scores"> <!--Section with the scores.-->
+          <table class="scores__table">
+            <thead> <!--Headers of the columns of the table.-->
+              <tr>
+                <th>Date</th>
+                <th>City</th>
+                <th>Autitorium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr> <!--First row.-->
+                <td>MAY 24, 2020</td>
+                <td>MOSCOW, RUSSIA</td>
+                <td class="winner">SPARTAK STADIUM</td>
+              </tr>
+              <tr> <!--Second row.-->
+                <td>MAY 27, 2020</td>
+                <td class="winner">HELSINKI, FINLAND</td>
+                <td>SUVILAHTI</td>
+              </tr>
+              <tr> <!--Third row.-->
+                <td>MAY 29, 2020</td>
+                <td class="winner">STOCKHOLM, SWEDEN</td>
+                <td>TELE2 ARENA</td>
+              </tr>
+              <tr> <!--Fourth row.-->
+                <td>MAY 31, 2020</td>
+                <td>ALESUND, NORWAY</td>
+                <td class="winner">COLOR LINE STADION</td>
+              </tr>
+              <tr> <!--Fifth row.-->
+                <td>JUNE 3, 2020</td>
+                <td class="winner">BERLIN, GERMANY</td>
+                <td>WUHLHEIDE</td>
+              </tr>
+            </tbody>
+          </table>
+          <img class="weather__today__image1" src="https://raw.githubusercontent.com/anferebu/FILES-USED-IN-PROJECTS/master/logogreen.png">
+        </section>
+
+        <section class="weather"> <!--Section weather.-->
+          <img class="weather__today__image" src="https://raw.githubusercontent.com/anferebu/FILES-USED-IN-PROJECTS/master/greendaytour.jpg" alt="icon of a partially cloudy day">
+        </section>
+
+        <section class="news recent-news"> <!--Section most recent news.-->
+          <h2 class="news__title">Band news <a href="#" class="news__more">+ more</a></h2>
+          <ul>
+            <li class="snippet">
+              <img class="snippet__thumbnail" src="https://raw.githubusercontent.com/anferebu/FILES-USED-IN-PROJECTS/master/nirvana.jpg" alt="picture of a girl with a large, stuffed dog toy">
+              <h3 class="snippet__title"><a href="#">Kurt Cobain's cardigan worn on MTV Unplugged goes up for auction for $50,000</a></h3>
+              <p>The garment, which has reportedly never been washed, will be available at a starting price of $50,000 (£41,000). It’s expected to fetch between $200,000 and $300,000 (£163,000 to £245,000). 
+              </p>
+            </li>
+            <li class="snippet">
+              <img class="snippet__thumbnail" src="https://raw.githubusercontent.com/anferebu/FILES-USED-IN-PROJECTS/master/stifflittlefingers.jpg" alt="picture of a girl with a large, stuffed dog toy">
+              <h3 class="snippet__title"><a href="#">Stiff Little Fingers' 'Inflammable Material' is still the definitive political punk album 40 years later</a></h3>
+              <p>The political punk record, as a concept, is now decades old, and any band wanting to make a new one really needs to pull out all the stops, or adopt a fresh approach, to rise above the studded belts.
+              </p>
+            </li>
+            <li class="snippet">
+              <img class="snippet__thumbnail" src="https://raw.githubusercontent.com/anferebu/FILES-USED-IN-PROJECTS/master/the-ramones-ra001stwa.png" alt="picture of a girl with a large, stuffed dog toy">
+              <h3 class="snippet__title"><a href="#">The Curse of The Ramones.</a></h3>
+              <p>The Ramones never had a true hit single or album, though at heart they wrote supremely melodic music. They continued for years across indifference and impediments, but the rift between the two leading members only worsened.
+              </p>
+            </li>
+            <li class="snippet">
+              <img class="snippet__thumbnail" src="https://raw.githubusercontent.com/anferebu/FILES-USED-IN-PROJECTS/master/sexpistols.jpg" alt="picture of a girl with a large, stuffed dog toy">
+              <h3 class="snippet__title"><a href="#">'Rotten' John Lydon set for Question Time</a></h3>
+              <p>Former Sex Pistols frontman John Lydon is swapping anarchy for current affairs to appear on Question Time. The punk pioneer, formerly known as Johnny Rotten, will join former home secretary Alan Johnson and Conservative MP Louise Mensch.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <footer> <!--Footer.  Each title is linkable.-->
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+    <script> //JavaScript code//
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu'); //JavaScript querySelector method.//
+      var main = document.querySelector('main'); //JavaScript querySelector method.//
+      var drawer = document.querySelector('.nav'); //JavaScript querySelector method.//
+
+      menu.addEventListener('click', function(e) { //EventListener that activates a function when clicked.  e is the short reference for event//
+        drawer.classList.toggle('open'); //Toggle the open class to the class drawer.//
+        e.stopPropagation(); //Stop deploying of the menu when the icon with the hamburger menu is clicked.
+      });
+      main.addEventListener('click', function() { 
+        drawer.classList.remove('open'); //Removes the class open from drawer.//
+      });
+
+    </script>
+  </body>
+</html>
