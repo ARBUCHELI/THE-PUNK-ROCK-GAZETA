@@ -16,4 +16,4 @@ The user can make click in the hamburguer menu to deploy the items of the menu.
 1) Donwload and unzip the repository folder.
 2) Open the index.html file in Google Chrome to see the project.
 
-Author: Andrés R. Bucheli.
+# Author: Andrés R. Bucheli.
